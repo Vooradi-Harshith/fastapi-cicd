@@ -28,3 +28,9 @@ jobs:
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           pytest
+
+      - name: Run lint checks
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          ruff app tests
+
