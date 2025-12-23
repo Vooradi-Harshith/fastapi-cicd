@@ -57,7 +57,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/fastapi-cicd:latest
+          tags: vooradiharshith/fastapi-cicd:latest
 
 
       - name: Debug docker username
