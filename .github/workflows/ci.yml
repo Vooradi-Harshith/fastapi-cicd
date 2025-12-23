@@ -32,5 +32,9 @@ jobs:
       - name: Run lint checks
         run: |
           export PYTHONPATH=$PYTHONPATH:.
-          ruff app tests
+          ruff check app tests
+      - name: Run tests with coverage
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          pytest --cov=app --cov-report=term
 
