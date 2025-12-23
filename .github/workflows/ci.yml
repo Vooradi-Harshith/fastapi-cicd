@@ -60,3 +60,6 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/fastapi-cicd:latest
 
 
+      - name: Debug docker username
+        run: |
+          echo "Docker user is: ${{ secrets.DOCKER_USERNAME }}"
